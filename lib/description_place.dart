@@ -6,13 +6,29 @@ class DescriptionPlace extends StatelessWidget {
   String textPlace;
   String descriptionPlace;
   int starsCount;
-   DescriptionPlace(this.textPlace, this.descriptionPlace, this.starsCount);
+  DescriptionPlace(this.textPlace, this.descriptionPlace, this.starsCount);
   @override
   Widget build(BuildContext context) {
     final start = Container(
       margin: EdgeInsets.only(top: 250.0, right: 3.0),
       child: Icon(
         Icons.star,
+        color: Color(0xFFf2C611),
+      ),
+    );
+
+    final startHalf = Container(
+      margin: EdgeInsets.only(top: 250.0, right: 3.0),
+      child: Icon(
+        Icons.star_half,
+        color: Color(0xFFf2C611),
+      ),
+    );
+
+    final startBorder = Container(
+      margin: EdgeInsets.only(top: 250.0, right: 3.0),
+      child: Icon(
+        Icons.star_border,
         color: Color(0xFFf2C611),
       ),
     );
@@ -46,7 +62,8 @@ class DescriptionPlace extends StatelessWidget {
           start,
           start,
           start,
-          start,
+          startHalf,
+          startBorder,
         ])
       ],
     );
