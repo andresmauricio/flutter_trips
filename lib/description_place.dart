@@ -42,6 +42,7 @@ class DescriptionPlace extends StatelessWidget {
       child: Text(
         descriptionPlace.isNotEmpty ? descriptionPlace : loremText,
         style: TextStyle(
+          fontFamily:'Nunito',
             fontSize: 16.0,
             fontWeight: FontWeight.bold,
             color: Color(0xFF56575a)),
@@ -54,7 +55,7 @@ class DescriptionPlace extends StatelessWidget {
           margin: EdgeInsets.only(top: 250.0, left: 20.0, right: 20.0),
           child: Text(
             textPlace,
-            style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.w900),
+            style: TextStyle(fontFamily:'Nunito', fontSize: 30.0, fontWeight: FontWeight.w900),
             textAlign: TextAlign.left,
           ),
         ),
