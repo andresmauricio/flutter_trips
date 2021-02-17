@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_trips/description_place.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,15 +15,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        appBar: AppBar(
-            title: Text(
-          'Hello World',
-          textAlign: TextAlign.center,
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
-        )),
-        body: Center(
-          child: Text('Hello World'),
-        ),
+        appBar: AppBar(title: Text('Hello World')),
+        body: DescriptionPlace()
       ),
     );
   }
