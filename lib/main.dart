@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text('Hello World')),
-        body: DescriptionPlace()
+        body: DescriptionPlace("Duwili Eila", '', 3)
       ),
     );
   }
